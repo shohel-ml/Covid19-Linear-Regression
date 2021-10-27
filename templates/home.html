@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+
+{% block title %}Home page{% endblock %}
+
+{% block body %}
+<div class="container my-3 " style="margin-right: -70px;">
+    <h2 class="">Next Days Covid  Prediction</h2>
+
+
+
+
+    <div class="card" style="width: 30rem;">
+        <div class="card-body">
+            <form action="{{url_for('predict')}}" method="post">
+                <!-- Email input -->
+                <div class="form-outline mb-4">
+                    <label class="form-label" for="day">After Of Days : </label>
+                    <input type="text" id="day" name="day" class="form-control" required />
+                </div>
+
+        
+           
+
+                <!-- Submit button -->
+                <button type="submit" class="btn btn-success btn-block">Prediction</button>
+
+                <hr>
+               
+            </form>
+        </div>
+
+    </div>
+        
+</div>
+{% endblock %}
