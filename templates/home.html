@@ -5,7 +5,7 @@
 
 {% block body %}
 <div class="container my-3 " style="margin-right: -70px;">
-    <h2 class="">Next Days Covid  Prediction</h2>
+    <h2 class="">Next Days Covid Prediction</h2>
 
 
 
@@ -19,18 +19,35 @@
                     <input type="text" id="day" name="day" class="form-control" required />
                 </div>
 
-        
-           
+
+
 
                 <!-- Submit button -->
                 <button type="submit" class="btn btn-success btn-block">Prediction</button>
 
                 <hr>
-               
+
             </form>
         </div>
-
+     
     </div>
-        
+
+</div>
+
+<div class="row my-4">
+    <h3 style="text-align: center;">Relations in Differnt Data</h3>
+    <div class="col-md-4">
+        <img src={{url}} alt="Chart" height="auto" width="100%">
+    </div>
+
+    <div class="col-md-4">
+        <img src={{url2}} alt="Chart" height="auto" width="100%">
+    </div>
+
+
+    <div class="col-md-4">
+        <img src={{url1}} alt="Chart" height="auto" width="100%">
+    </div>
+
 </div>
 {% endblock %}

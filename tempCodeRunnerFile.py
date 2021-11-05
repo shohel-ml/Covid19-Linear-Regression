@@ -1,0 +1,1 @@
+Test'],mydata['Infected'],bins=[40,50])
